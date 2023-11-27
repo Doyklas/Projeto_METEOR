@@ -13,9 +13,11 @@ CREATE TABLE maquina(
 );
 CREATE TABLE operador(
 	pk_id_operador INT NOT NULL UNIQUE AUTO_INCREMENT,
+	fk_id_historico INT NOT NULL, -- conferir dps este dado
 	nome_operador VARCHAR(40) NOT NULL,
 	especializacao VARCHAR(50) NOT NULL,
 	disponibilidade TIME,
+	
     
     PRIMARY KEY (pk_id_operador)
 );
